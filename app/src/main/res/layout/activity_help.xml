@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.yueli.flightcheck.Extend.HelpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="520dp">
+        <ListView
+            android:id="@+id/service_main_lv2_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/service_main_lv_msg">
+        </ListView>
+        <ListView
+            android:divider="@null"
+            android:id="@+id/service_main_lv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transcriptMode="alwaysScroll">
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/service_main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <EditText style="@style/usertext"
+            android:id="@+id/service_main_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:lines="1" />
+
+        <Button
+            android:background="@drawable/single_select"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:id="@+id/service_main_send"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

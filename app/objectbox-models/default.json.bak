@@ -1,0 +1,194 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "2:1326433741911211277",
+      "lastPropertyId": "5:1156750667853047680",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:3984434868022931323",
+          "name": "id"
+        },
+        {
+          "id": "2:5787079656623144622",
+          "name": "name"
+        },
+        {
+          "id": "3:4974923089864829436",
+          "name": "pwd"
+        },
+        {
+          "id": "4:5298170848205684572",
+          "name": "uri"
+        },
+        {
+          "id": "5:1156750667853047680",
+          "name": "phone"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:5135255586544790916",
+      "lastPropertyId": "3:5501791977572558584",
+      "name": "Airport",
+      "properties": [
+        {
+          "id": "1:7222808322026357904",
+          "name": "id"
+        },
+        {
+          "id": "2:813364646935473562",
+          "name": "name"
+        },
+        {
+          "id": "3:5501791977572558584",
+          "name": "kind"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:3066408520888300090",
+      "lastPropertyId": "3:4240633569380161613",
+      "name": "Booking",
+      "properties": [
+        {
+          "id": "1:5843503036703763517",
+          "name": "id"
+        },
+        {
+          "id": "2:3529600110613201566",
+          "name": "UserId"
+        },
+        {
+          "id": "3:4240633569380161613",
+          "name": "FlightId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:290956069089063253",
+      "lastPropertyId": "5:2186317674682523603",
+      "name": "Flight",
+      "properties": [
+        {
+          "id": "1:7362809591478841614",
+          "name": "id"
+        },
+        {
+          "id": "2:891523114279701962",
+          "name": "flno"
+        },
+        {
+          "id": "3:6303708676420643680",
+          "name": "planeType"
+        },
+        {
+          "id": "4:947049082613246930",
+          "name": "planeNo"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:237502626954908851",
+      "lastPropertyId": "13:1596975462611052763",
+      "name": "FlightDetail",
+      "properties": [
+        {
+          "id": "1:5230174534669652645",
+          "indexId": "2:1789953023669213037",
+          "name": "id"
+        },
+        {
+          "id": "2:1471688697322897008",
+          "name": "FlightId"
+        },
+        {
+          "id": "3:7836671712147048762",
+          "name": "parking"
+        },
+        {
+          "id": "4:255378181902163912",
+          "name": "takeoffTime0"
+        },
+        {
+          "id": "5:6039159921558058322",
+          "name": "takeoffTime1"
+        },
+        {
+          "id": "6:6016173271125585691",
+          "name": "arriveTime0"
+        },
+        {
+          "id": "7:773991125725770960",
+          "name": "arriveTime1"
+        },
+        {
+          "id": "8:445907824706675555",
+          "name": "state"
+        },
+        {
+          "id": "11:4786723330371736267",
+          "name": "fromId"
+        },
+        {
+          "id": "12:3693640369714893911",
+          "name": "toId"
+        },
+        {
+          "id": "13:1596975462611052763",
+          "name": "checkDay"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:2913104970244255056",
+      "lastPropertyId": "3:250665582601392974",
+      "name": "Pickup",
+      "properties": [
+        {
+          "id": "1:2349597334489382121",
+          "name": "id"
+        },
+        {
+          "id": "2:5401558248895245778",
+          "name": "UserId"
+        },
+        {
+          "id": "3:250665582601392974",
+          "name": "FlightId"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "7:2913104970244255056",
+  "lastIndexId": "2:1789953023669213037",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [
+    2213779342009251683
+  ],
+  "retiredIndexUids": [
+    2122885635093374762
+  ],
+  "retiredPropertyUids": [
+    2841016964372410676,
+    1110854033672565358,
+    8621224144264097245,
+    4287539114324173687,
+    5828312234962495904,
+    2186317674682523603
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

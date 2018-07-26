@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#56aa43</color>
+    <color name="colorPrimaryDark">#5bb447</color>
+    <color name="colorAccent">#5fbd4b</color>
+    <color name="colorDefault">#b973d25f</color>
+    <color name="colorSelected">#b37be29b</color>
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="white">#fff</color>
+    <color name="blue">#43be3d</color>
+</resources>

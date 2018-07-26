@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/img_frag_recv_msg"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+    <TextView style="@style/usertext"
+        android:layout_gravity="center"
+        android:id="@+id/frag_pickup_flno"
+        android:text="航班" />
+    <TextView style="@style/usertext"
+        android:layout_gravity="center"
+        android:id="@+id/frag_pickup_start"
+        android:text="始发" />
+    <TextView style="@style/usertext"
+        android:layout_gravity="center"
+        android:id="@+id/frag_pickup_date0"
+        android:text="计划到达" />
+    <TextView style="@style/usertext"
+        android:layout_gravity="center"
+        android:id="@+id/frag_pickup_date1"
+        android:text="实际到达" />
+    <TextView style="@style/usertext"
+        android:layout_gravity="center"
+        android:id="@+id/frag_pickup_hzl"
+        android:text="航站楼" />
+    <TextView style="@style/usertext"
+        android:layout_gravity="center"
+        android:id="@+id/frag_pickup_status"
+        android:text="状态" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yueli.flightcheck.FlightSelectActivity">
+<LinearLayout style="@style/wrap_layout">
+    <LinearLayout style="@style/mid_layout"
+        android:background="#F0F3F6"
+        android:orientation="horizontal">
+        <EditText style="@style/usertext"
+            android:id="@+id/search_input"/>
+        <ImageView
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout style="@style/mid_layout">
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

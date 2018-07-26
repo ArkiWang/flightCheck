@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.yueli.flightcheck.MainActivity">
+    <item
+        app:actionProviderClass="com.example.yueli.flightcheck.Provider.PlusActionProvider"
+        android:id="@+id/main_plus"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_add"
+        android:title="Add" />
+</menu>

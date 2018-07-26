@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/single_unselect"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="90dp"
+        android:id="@+id/editText3">
+        <RelativeLayout
+            android:id="@+id/left_city"
+            android:layout_marginLeft="8dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sour_city"
+                android:text="出发城市" />
+
+            <TextView
+                android:id="@+id/sour_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="天津"
+                android:textSize="20sp" />
+            </RelativeLayout>
+            <TextView
+                android:drawableTop="@drawable/ic_exchange"
+                android:clickable="true"
+                android:id="@+id/exchange_city"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        <RelativeLayout
+            android:id="@+id/right_city"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/des_city"
+                android:gravity="center"
+                android:text="目的城市" />
+
+            <TextView
+                android:id="@+id/des_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="北京"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout style="@style/wrap_layout"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/line_date">
+        <RelativeLayout  style="@style/single_layout"
+            android:id="@+id/city_date"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="出发日期" />
+
+            <TextView
+                android:id="@+id/city_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="日期"/>
+            <ImageView style="@style/img_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line_frag_cbtn"
+       android:layout_marginTop="300dp"
+        style="@style/wrap_layout">
+        <Button
+            android:background="@drawable/single_layout_selector"
+            android:id="@+id/frag_tabcon_city_btn"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:text="航班查询"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_frag_cbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="查询历史" />
+</RelativeLayout>

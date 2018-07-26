@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout style="@style/wrap_layout"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="70dp"
+    android:id="@+id/editText3">
+    <LinearLayout style="@style/single_layout">
+        <TextView style="@style/usertext"
+            android:id="@+id/flno_no"
+        android:text="857887" />
+    </LinearLayout>
+
+    ></LinearLayout>
+
+    <RelativeLayout style="@style/wrap_layout"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="20dp">
+        <LinearLayout style="@style/single_layout"
+            android:id="@+id/line_date">
+            <TextView style="@style/usertext"
+                android:id="@+id/flno_date_text"
+                android:text="日期"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:id="@+id/line_frag_fbtn"
+        style="@style/wrap_layout">
+        <Button
+            android:background="@drawable/single_layout_selector"
+            android:id="@+id/frag_tabcon_flight_btn"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:text="航班查询"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_frag_fbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="查询历史" />
+</RelativeLayout>

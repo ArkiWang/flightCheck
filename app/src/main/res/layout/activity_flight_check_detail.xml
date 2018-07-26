@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yueli.flightcheck.FlightCheckDetailActivity">
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout"
+            android:clickable="false"
+            android:orientation="horizontal">
+            <TextView style="@style/usertext"
+                android:background="@drawable/single_unselect"
+                android:id="@+id/flight_state"
+                android:text="状态"/>
+            <TextView style="@style/usertext"
+                android:id="@+id/flight_distance"
+                android:text="距离"/>
+            <TextView style="@style/usertext"
+                android:id="@+id/flight_duration"
+                android:text="航行时间"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/top_layout"
+            android:clickable="false"
+            android:orientation="vertical">
+            <TextView style="@style/usertext"
+                android:id="@+id/flight_from_city"
+                android:text="北京首都T3"/>
+            <View style="@style/bg_line"/>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView style="@style/usertext"
+                    android:text="计划起飞"/>
+                <TextView style="@style/usertext"
+                    android:id="@+id/flight_start_time0"
+                    android:text="08:30 2018-07-09 GMT+8"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView style="@style/usertext"
+                    android:text="实际起飞"/>
+                <TextView style="@style/usertext"
+                    android:id="@+id/flight_start_time1"
+                    android:text="08:30 2018-07-09 GMT+8"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/mid_layout"
+            android:clickable="false"
+            android:orientation="vertical">
+            <TextView style="@style/usertext"
+                android:id="@+id/flight_to_city"
+                android:text="首尔仁川T1"/>
+            <View style="@style/bg_line"/>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView style="@style/usertext"
+                    android:text="计划到达"/>
+                <TextView style="@style/usertext"
+                    android:id="@+id/flight_end_time0"
+                    android:text="08:30 2018-07-09 GMT+8"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <TextView style="@style/usertext"
+                    android:text="实际到达"/>
+                <TextView style="@style/usertext"
+                    android:id="@+id/flight_end_time1"
+                    android:text="08:30 2018-07-09 GMT+8"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/bottom_layout"
+            android:clickable="false"
+            android:orientation="vertical">
+            <TextView style="@style/usertext"
+                android:text="执行飞机"/>
+            <ImageView android:layout_width="match_parent"
+                android:background="@color/border_clo"
+                android:layout_height="1px"/>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView style="@style/usertext"
+                        android:text="机型"/>
+                    <TextView style="@style/usertext"
+                        android:id="@+id/flight_kind"
+                        android:text="321-213"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView style="@style/usertext"
+                        android:text="停机口"/>
+                    <TextView style="@style/usertext"
+                        android:id="@+id/flight_port"
+                        android:text="321-213"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView style="@style/usertext"
+                        android:text="飞机编号"/>
+                    <TextView style="@style/usertext"
+                        android:id="@+id/flight_no"
+                        android:text="B6555"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

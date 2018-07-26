@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">航班查询</string>
+    <string name="plus_add_flight">添加航班</string>
+    <string name="plus_config">设置</string>
+    <string name="plus_help">帮助与反馈</string>
+
+
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+
+    <string name="main_title">关于</string>
+    <string name="agree_title">用户协议</string>
+    <string name="state_title">隐私声明</string>
+    <string name="help_user"><u>用户协议</u></string>
+    <string name="help_privacy"><u>隐私声明</u></string>
+</resources>

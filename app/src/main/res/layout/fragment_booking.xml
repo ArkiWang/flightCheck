@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout">
+            <TextView style="@style/usertext"
+                android:id="@+id/add_booking"
+                android:clickable="true"
+                android:text="添加订阅"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout">
+            <TextView style="@style/usertext"
+                android:id="@+id/booking_msg"
+                android:clickable="true"
+                android:text="我的订阅"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/mid_layout"
+            android:orientation="vertical">
+            <TextView style="@style/usertext"
+                android:text="我的消息"
+                android:textSize="18sp"/>
+            <TextView
+                style="@style/usertext"
+                android:id="@+id/newest_msg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

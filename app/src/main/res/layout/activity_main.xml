@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yueli.flightcheck.MainActivity">
+
+   <RadioGroup
+       android:id="@+id/main_rd_group"
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal">
+
+      <RadioButton
+          android:id="@+id/rd_menu_check"
+          android:text="航班查询"
+          style="@style/tab_menu_item"
+          android:drawableTop="@drawable/ic_search_white_24dp"
+          android:checked="true"
+          />
+
+      <RadioButton
+          android:id="@+id/rd_menu_msg"
+          android:drawableTop="@drawable/ic_vol_type_tv_dark"
+          android:text="接机消息"
+          style="@style/tab_menu_item"
+          />
+
+      <RadioButton
+          android:id="@+id/rd_menu_book"
+          android:text="订阅"
+          android:drawableTop="@drawable/ic_booking"
+          style="@style/tab_menu_item"
+          />
+
+      <RadioButton
+          android:id="@+id/rd_menu_user"
+          android:drawableTop="@drawable/ic_person_info"
+          android:text="个人中心"
+          style="@style/tab_menu_item"
+          />
+   </RadioGroup>
+
+   <FrameLayout
+       android:id="@+id/fragment_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@id/main_rd_group">
+   </FrameLayout>
+
+</RelativeLayout>

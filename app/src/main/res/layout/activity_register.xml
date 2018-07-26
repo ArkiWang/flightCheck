@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.yueli.flightcheck.RegisterActivity">
+    <LinearLayout
+        android:background="#F0F3F7"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        style="@style/wrap_layout">
+        <LinearLayout android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <EditText style="@style/usertext"
+                android:id="@+id/phone"
+                android:inputType="phone"
+                android:layout_gravity="center"
+                android:hint="手机号"/>
+            <TextView
+                android:text="*必填"
+                android:textSize="14sp"
+                android:textColor="#237bac"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginRight="20dp"
+                android:layout_width="100dp"
+                android:id="@+id/auth_code"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="验证码"/>
+            <TextView
+                android:text="*必填"
+                android:textSize="14sp"
+                android:textColor="#237bac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="发送验证码"
+                android:textSize="14sp"
+                android:background="@drawable/single_select"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/get_auth_code"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <EditText style="@style/usertext"
+                android:id="@+id/register_username"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:hint="用户名"/>
+            <TextView
+                android:text="*必填"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="#237bac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="#039973"
+            android:id="@+id/register_name_hint"
+            android:visibility="gone"
+            android:text="*用户名不可用"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View style="@style/bg_line"/>
+        <LinearLayout android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <EditText style="@style/usertext"
+                android:id="@+id/register_pwd"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:hint="密码"/>
+            <TextView
+                android:text="*必填"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="#237bac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <LinearLayout android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <EditText style="@style/usertext"
+                android:id="@+id/register_pwd_repeat"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:hint="确认密码"/>
+            <TextView
+                android:text="*必填"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="#237bac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="#039973"
+            android:id="@+id/register_hint"
+            android:visibility="gone"
+            android:text="*两次密码输入不一致"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        style="@style/wrap_layout">
+        <Button
+            android:background="@drawable/single_layout_selector"
+            android:id="@+id/register_submit"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:text="注册"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

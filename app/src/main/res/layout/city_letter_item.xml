@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<RelativeLayout android:layout_height="20dp"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/city_letter"
+        android:layout_centerInParent="true"
+        android:text="A"
+        android:clickable="false"
+        android:gravity="center"
+        android:background="#868c8a"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</LinearLayout>
