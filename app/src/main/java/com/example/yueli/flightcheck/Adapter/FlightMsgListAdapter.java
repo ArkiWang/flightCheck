@@ -1,6 +1,8 @@
 package com.example.yueli.flightcheck.Adapter;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,6 +14,8 @@ import com.example.yueli.flightcheck.R;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import static android.support.v4.content.res.ResourcesCompat.getColor;
 
 /**
  * Created by yueli on 2018/7/7.
@@ -60,6 +64,11 @@ public class FlightMsgListAdapter extends BaseAdapter {
        // holder.from.setText(item.fromA);
         holder.arrive0.setText(item.arriveTime0);
         holder.arrive1.setText(item.arriveTime1);
+        if(item.state.equals("延误"))
+            holder.state.setTextColor(getColor(R.color.red));
+        getColor(color,)
+        else
+            holder.state.setTextColor(getResources().getColor(R.color.colorPrimary));
         holder.state.setText(item.state);
         holder.hzl.setText(item.toA);
         return convertView;

@@ -3,25 +3,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="30dp"
     android:orientation="horizontal">
-        <TextView style="@style/usertext"
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_no"
             android:text="CS123"/>
-        <TextView style="@style/usertext"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_start0"
             android:text="06:50"/>
-        <TextView style="@style/usertext"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_start1"
             android:text="07:13"/>
-        <TextView style="@style/usertext"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_boarding"
             android:text="T3"/>
-        <TextView style="@style/usertext"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_end0"
             android:text="09:10"/>
-        <TextView style="@style/usertext"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_end1"
             android:text="08:56"/>
-        <TextView style="@style/usertext"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:id="@+id/item_flight_state"
             android:text="到达"/>
         <ImageView style="@style/img_arrow"/>

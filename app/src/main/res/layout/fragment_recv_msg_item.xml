@@ -10,27 +10,45 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         app:srcCompat="@android:drawable/ic_menu_send" />
-    <TextView style="@style/usertext"
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/frag_pickup_flno"
         android:text="航班" />
-    <TextView style="@style/usertext"
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/frag_pickup_start"
         android:text="始发" />
-    <TextView style="@style/usertext"
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/frag_pickup_date0"
         android:text="计划到达" />
-    <TextView style="@style/usertext"
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/frag_pickup_date1"
         android:text="实际到达" />
-    <TextView style="@style/usertext"
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/frag_pickup_hzl"
         android:text="航站楼" />
-    <TextView style="@style/usertext"
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/frag_pickup_status"
         android:text="状态" />
